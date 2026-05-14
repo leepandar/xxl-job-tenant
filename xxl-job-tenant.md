@@ -1,7 +1,6 @@
 # xxl-job-tenant
 
-本仓库用于承载基于 `xuxueli/xxl-job` 最新版本的多租户改造方案。当前参考的上游版本为 **XXL-JOB v3.4.0**（2026-04 发布，JDK 17+）。由于当前执行环境无法通过 Git/HTTP 直接拉取 GitHub/Gitee/SourceForge 源码包，本次提交先落地可编译的核心领域模型、服务层与数据库迁移脚本，便于后续把同样的租户边界补丁合入完整 `xxl-job-admin` 页面与 Mapper。
-
+本仓库用于承载基于 `xuxueli/xxl-job` 最新版本的多租户改造方案。当前参考的上游版本为 **XXL-JOB v3.4.0**（2026-04 发布，JDK 17+）。
 ## 改造目标
 
 1. **支持增加租户、增加租户下用户**：新增 `TenantAdminService`，以 `tenantCode + username` 作为用户唯一身份。
